@@ -1,7 +1,7 @@
 # Zenzenpotpot.github.io
 
 Welcome to my developer portfolio repository!  
-This repository hosts the source code for my personal portfolio website, which showcases my projects and skills as a 17‑year‑old developer.
+This repository hosts the source code for my personal portfolio website, which showcases my projects and skills as a young developer.
 
 ## 🌐 Live Site
 
