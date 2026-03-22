@@ -6,7 +6,7 @@ This repository hosts the source code for my personal portfolio website, which s
 ## 🌐 Live Site
 
 You can view the live portfolio at:  
-[https://Zen.github.io](https://Zen.github.io)
+[https://Zen.github.io](https://Zenzenpotpot.github.io)
 
 ## 📁 Projects Featured
 
