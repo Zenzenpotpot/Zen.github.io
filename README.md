@@ -1,4 +1,4 @@
-# Zenzenpotpot.github.io
+# Zen.github.io
 
 Welcome to my developer portfolio repository!  
 This repository hosts the source code for my personal portfolio website, which showcases my projects and skills as a young developer.
@@ -6,7 +6,7 @@ This repository hosts the source code for my personal portfolio website, which s
 ## 🌐 Live Site
 
 You can view the live portfolio at:  
-[https://zenzenpotpot.github.io](https://zenzenpotpot.github.io)
+[https://Zen.github.io](https://Zen.github.io)
 
 ## 📁 Projects Featured
 
