@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Attendance System – Zenzenpotpot</title>
+    <style>
+        /* Same base styles as grading-system.html – include exactly the same CSS for consistency */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background: #2c3e50;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        header h1 {
+            margin-bottom: 0.5rem;
+        }
+        nav {
+            margin-top: 1rem;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .project-header {
+            background: #ecf0f1;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        .project-header h2 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        .content {
+            padding: 2rem 0;
+        }
+        .section {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+        }
+        .section h3 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            border-left: 4px solid #3498db;
+            padding-left: 0.75rem;
+        }
+        .tech-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+        .tech-badge {
+            background: #ecf0f1;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        .screenshot {
+            margin: 1rem 0;
+            text-align: center;
+        }
+        .screenshot img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            margin: 1rem 0;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background: #2c3e50;
+            color: #fff;
+            margin-top: 2rem;
+        }
+        @media (max-width: 768px) {
+            .project-header h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Zenzenpotpot</h1>
+            <p>Developer Portfolio</p>
+            <nav>
+                <a href="../index.html">Home</a>
+                <a href="grading-system.html">Grading System</a>
+                <a href="attendance-system.html">Attendance System</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="project-header">
+        <div class="container">
+            <h2>🔐 Smart Attendance System</h2>
+            <p>Arduino + RFID + Fingerprint + SMS Integration</p>
+        </div>
+    </div>
+
+    <div class="content container">
+        <!-- Overview -->
+        <div class="section">
+            <h3>📌 Overview</h3>
+            <p>A hardware‑integrated attendance system that uses RFID and fingerprint sensors to log student attendance. Upon successful verification, a VB.NET application records the data and sends an SMS notification to parents or administrators.</p>
+        </div>
+
+        <!-- Problem -->
+        <div class="section">
+            <h3>⚠️ Problem it Solves</h3>
+            <p>Manual attendance is time‑consuming and prone to proxy attendance. This system ensures that only the authorized student can mark attendance, and parents receive real‑time updates, improving accountability and transparency.</p>
+        </div>
+
+        <!-- Tech Stack -->
+        <div class="section">
+            <h3>🛠️ Tech Stack</h3>
+            <div class="tech-list">
+                <span class="tech-badge">Arduino Uno</span>
+                <span class="tech-badge">RFID RC522</span>
+                <span class="tech-badge">Fingerprint Sensor (R307)</span>
+                <span class="tech-badge">GSM SIM800L</span>
+                <span class="tech-badge">VB.NET</span>
+                <span class="tech-badge">Serial Communication</span>
+                <span class="tech-badge">SQL Server</span>
+            </div>
+        </div>
+
+        <!-- Features -->
+        <div class="section">
+            <h3>✨ Key Features</h3>
+            <ul>
+                <li>Dual‑factor authentication: RFID + fingerprint</li>
+                <li>Real‑time SMS alert via GSM module</li>
+                <li>VB.NET interface displays logs and allows admin control</li>
+                <li>Automatic generation of daily/monthly attendance reports</li>
+                <li>Offline capability: attendance stored locally on Arduino if PC disconnected</li>
+            </ul>
+        </div>
+
+        <!-- Photos -->
+        <div class="section">
+            <h3>📸 Hardware Photos</h3>
+            <div class="screenshot">
+                <img src="../images/attendance/setup.jpg" alt="Full Hardware Setup">
+                <p><em>Complete hardware setup (Arduino, sensors, GSM)</em></p>
+            </div>
+            <div class="screenshot">
+                <img src="../images/attendance/closeup.jpg" alt="Close-up of Sensors">
+                <p><em>RFID reader and fingerprint sensor</em></p>
+            </div>
+        </div>
+
+        <!-- Demo Video -->
+        <div class="section">
+            <h3>🎥 Demo Video</h3>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <p><em>Replace with your own video link showing RFID + fingerprint + SMS workflow.</em></p>
+        </div>
+
+        <!-- Architecture Diagram -->
+        <div class="section">
+            <h3>📐 Architecture Diagram</h3>
+            <div class="screenshot">
+                <img src="../images/attendance/diagram.png" alt="System Architecture">
+            </div>
+            <p><em>Data flow: Sensors → Arduino → Serial → VB.NET → Database → SMS.</em></p>
+        </div>
+
+        <!-- Challenges -->
+        <div class="section">
+            <h3>🧩 Challenges & Solutions</h3>
+            <p><strong>Challenge:</strong> Integrating the fingerprint sensor with Arduino required precise timing; sensor communication sometimes blocked the serial port.<br>
+            <strong>Solution:</strong> Implemented a state machine to manage sensor communication without halting the main loop.</p>
+            <p><strong>Challenge:</strong> GSM module occasionally failed to send SMS.<br>
+            <strong>Solution:</strong> Added retry logic and a queue system to ensure delivery; also used AT command error checking.</p>
+            <p><strong>Challenge:</strong> Synchronizing the Arduino clock with PC time for accurate logging.<br>
+            <strong>Solution:</strong> Sent time sync commands from VB.NET to Arduino on startup.</p>
+        </div>
+
+        <!-- Lessons Learned -->
+        <div class="section">
+            <h3>📖 What I Learned</h3>
+            <ul>
+                <li>Hardware‑software integration and serial communication protocols</li>
+                <li>Designing fail‑safe systems for real‑time operations</li>
+                <li>Power management for embedded devices</li>
+                <li>Debugging hardware issues with oscilloscopes and logic analyzers</li>
+            </ul>
+        </div>
+
+        <!-- Code Availability (explicitly private) -->
+        <div class="section">
+            <h3>🔒 Code Availability</h3>
+            <p>The source code for this project is proprietary and not publicly available. However, I am happy to discuss the architecture, algorithms, and my development process during interviews or consultations.</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Zenzenpotpot. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
